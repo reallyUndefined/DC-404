@@ -1,0 +1,119 @@
+:root {
+  --color-dark-grey: #333333;
+  --color-light-grey: #4f4f4f;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  color: var(--color-dark-grey);
+}
+
+.container {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+.title {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.08em;
+  line-height: 1.5625rem;
+  padding-top: 1.25rem;
+  margin-left: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.grid-container {
+  display: grid;
+  margin-bottom: 5rem;
+}
+
+.image-wrapper {
+  margin-inline: 1.25rem;
+  margin-bottom: 3.75rem;
+  max-width: 33.75rem;
+}
+
+.image-wrapper > img {
+  width: 100%;
+}
+
+.content-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  max-width: 15ch;
+  padding-left: 1.5rem;
+  margin-bottom: 1.875rem;
+}
+
+.content-desc {
+  color: var(--color-light-grey);
+  padding-inline: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin-bottom: 4.125rem;
+}
+
+.redirect-button {
+  margin-left: 1.5rem;
+  padding-block: 1.5rem;
+  padding-inline: 2.75rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  letter-spacing: -0.035em;
+  line-height: 1.3125rem;
+  background-color: var(--color-dark-grey);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease-out;
+}
+
+.redirect-button:hover {
+  background-color: var(--color-light-grey);
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    margin-left: 4.8125rem;
+    margin-bottom: 12.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .image-wrapper {
+    margin: 0 0 0 4.8125rem;
+  }
+
+  .content-title {
+    font-size: 4rem;
+    line-height: 5.9375rem;
+    padding: 0;
+    margin-bottom: 2.25rem;
+  }
+
+  .content-desc {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    max-width: 30ch;
+    padding: 0;
+  }
+
+  .redirect-button {
+    margin: 0;
+  }
+}
