@@ -20,7 +20,8 @@
 
 ![screenshot](./screenshots/screenshot-1.png)
 
-Found a cool html & css challenge on devchallenges.io, I had fun making it.
+Found a cool html & css challenge on devchallenges.io, I had fun making it.\
+Check the live site out: [Click Here](https://undefined-dc-404.netlify.app/)
 
 ### Built With
 
